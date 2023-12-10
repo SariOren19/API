@@ -1,6 +1,6 @@
-#**NintexAPI Anomaly Detection Service**
+# **NintexAPI Anomaly Detection Service**
 
-##**Overview**
+## **Overview**
 
 Python-based API service for managing users within a system, with an added focus on anomaly detection to identify unusual user activities. 
 
