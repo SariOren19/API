@@ -28,7 +28,7 @@ Make sure you have the following installed:
 ### **Installation**
 - Clone the repository:
   - git clone <repository_url>
-  cd NintexAPI
+  cd API
 - Build the Docker image:
   - docker build -t nintexapi .
 
