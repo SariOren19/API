@@ -12,7 +12,7 @@ It includes:
   - Endpoint to return a list of all users with their details.
 - Anomaly Detection algorithms that flags unusual activities based on user behavior:
   - Statistical method: z-score
-  - Machine learning method: Local Outlier Factor - LOF).
+  - Machine learning method: Local Outlier Factor - LOF.
 - Basic authentication to secure the API endpoints, including the anomaly detection feature. 
 
 
