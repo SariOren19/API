@@ -16,84 +16,75 @@ It includes:
 - Basic authentication to secure the API endpoints, including the anomaly detection feature. 
 
 
-Setup
+## **Setup**
 
-Prerequisites
+### **Prerequisites**
 
 Make sure you have the following installed:
 
-Docker: Installation Guide
-Python 3.8 or higher
+- Docker: Installation Guide
+- Python 3.8 or higher
 
-Installation
-1.Clone the repository:
+### **Installation**
+- Clone the repository:
   git clone <repository_url>
   cd NintexAPI
-2.Build the Docker image:
+- Build the Docker image:
   docker build -t nintexapi .
 
-Running the Service
+### **Running the Service**
 
-Start the Docker Container
+- Start the Docker Container
+- Run the Docker container, exposing port 4000 on your local machine:
+  docker run -p 4000:80 nintexapi
+- The service will be accessible at http://localhost:4000.
+- Access the API Documentation
+  Visit http://localhost:4000/docs for the interactive API documentation, where you can explore and test the available endpoints.
 
-Run the Docker container, exposing port 4000 on your local machine:
-docker run -p 4000:80 nintexapi
+## **Anomaly Detection**
 
-The service will be accessible at http://localhost:4000.
+### **Z-Score Anomaly Detection**
 
-Access the API Documentation
-Visit http://localhost:4000/docs for the interactive API documentation, where you can explore and test the available endpoints.
+- To perform Z-Score anomaly detection, use the following endpoint:
+  GET /anomaly-detection-zscore/
+- This will return anomalies in login frequency, password change frequency, and failed login attempts based on Z-Score calculations.
 
-Anomaly Detection
+### **LOF Anomaly Detection**
 
-Z-Score Anomaly Detection
+- To perform LOF anomaly detection, use the following endpoint:
+  GET /anomaly-detection-lof/
+- This will return anomalies in login frequency, password change frequency, and failed login attempts based on the Local Outlier Factor algorithm.
 
-To perform Z-Score anomaly detection, use the following endpoint:
-GET /anomaly-detection-zscore/
-This will return anomalies in login frequency, password change frequency, and failed login attempts based on Z-Score calculations.
+## **User Management**
 
-LOF Anomaly Detection
+### **Create a New User**
+- To create a new user, use the following endpoint:
+  POST /users/
+- Provide user details in the request body.
 
-To perform LOF anomaly detection, use the following endpoint:
-GET /anomaly-detection-lof/
-This will return anomalies in login frequency, password change frequency, and failed login attempts based on the Local Outlier Factor algorithm.
+### **Edit an Existing User**
+- To edit an existing user, use the following endpoint:
+  PUT /users/{user_id}
+- Provide the user ID and updated user details in the request body.
 
-User Management
+### **Delete a User**
+- To delete a user, use the following endpoint:
+  DELETE /users/{user_id}
+- Provide the user ID in the request.
 
-Create a New User
+### **List All Users**
+- To list all users, use the following endpoint:
+  GET /users/
 
-To create a new user, use the following endpoint:
-POST /users/
-Provide user details in the request body.
+## **Authentication**
+- The service uses HTTP Basic Authentication. Use the following credentials:
+  Username: NintexSari
+  Password: NS2023
 
-Edit an Existing User
+## **Additional Information**
 
-To edit an existing user, use the following endpoint:
-PUT /users/{user_id}
-Provide the user ID and updated user details in the request body.
+- The service uses FastAPI, a modern, fast web framework for building APIs with Python 3.7+.
+- Anomaly detection is based on statistical methods (Z-Score) and machine learning (LOF).
 
-Delete a User
-
-To delete a user, use the following endpoint:
-DELETE /users/{user_id}
-Provide the user ID in the request.
-
-List All Users
-
-To list all users, use the following endpoint:
-GET /users/
-
-Authentication
-
-The service uses HTTP Basic Authentication. Use the following credentials:
-Username: NintexSari
-Password: NS2023
-
-Additional Information
-
-The service uses FastAPI, a modern, fast web framework for building APIs with Python 3.7+.
-Anomaly detection is based on statistical methods (Z-Score) and machine learning (LOF).
-
-Feedback and Support
-
+## **Feedback and Support**
 For feedback or support, contact [sari.oren193@gmail.com].
