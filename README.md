@@ -84,7 +84,7 @@ Make sure you have the following installed:
 ## **Additional Information**
 
 - The service uses FastAPI, a modern, fast web framework for building APIs with Python 3.7+.
-- Anomaly detection is based on statistical methods (Z-Score) and machine learning (LOF).
+- Anomaly detection is based on statistical method - Z-Score and machine learning method - Local Outlier Factor.
 
 ## **Feedback and Support**
 For feedback or support, contact [sari.oren193@gmail.com].
