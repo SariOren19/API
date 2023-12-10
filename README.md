@@ -50,7 +50,8 @@ Make sure you have the following installed:
 ### **Create a New User**
 - To create a new user, use the following endpoint:
   - POST /users/
-- Provide user details in the request body.
+- Provide user details in the request body:
+  - {"name":"string","email":"string","password":"string"}
 
 ### **Edit an Existing User**
 - To edit an existing user, use the following endpoint:
