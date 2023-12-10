@@ -85,6 +85,7 @@ Make sure you have the following installed:
 
 - The service uses FastAPI, a modern, fast web framework for building APIs with Python 3.7+.
 - Anomaly detection is based on statistical method - Z-Score and machine learning method - Local Outlier Factor.
+- I used Postman API platform in order to simplify the API testing process.
 
 ## **Feedback and Support**
 For feedback or support, contact [sari.oren193@gmail.com].
