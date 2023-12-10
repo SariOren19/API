@@ -22,7 +22,7 @@ It includes:
 
 Make sure you have the following installed:
 
-- Docker: Installation Guide
+- Docker: [Installation Guide](https://docs.docker.com/get-docker/)
 - Python 3.8 or higher
 
 ### **Installation**
