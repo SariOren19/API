@@ -25,14 +25,14 @@ Make sure you have the following installed:
 - Docker: [Installation Guide](https://docs.docker.com/get-docker/)
 - Python 3.8 or higher
 
-### **Installation**
+#### **Installation**
 - Clone the repository:
   - git clone <repository_url>
   cd API
 - Build the Docker image:
   - docker build -t nintexapi .
 
-### **Running the Service**
+#### **Running the Service**
 
 - Start the Docker Container
 - Run the Docker container, exposing port 4000 on your local machine:
