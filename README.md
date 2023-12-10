@@ -1,19 +1,19 @@
-# **NintexAPI Anomaly Detection Service**
+# **API service for managing users and anomaly detection algorithms to identify unusual user activities**
 
 ## **Overview**
 
 Python-based API service for managing users within a system, with an added focus on anomaly detection to identify unusual user activities. 
 
 It includes:
--User Management:
-  -Endpoint to add a new user.
-  -Endpoint to modify details of an existing user.
-  -Endpoint to remove a user.
-  -Endpoint to return a list of all users with their details.
--Anomaly Detection algorithms that flags unusual activities based on user behavior:
-  -Statistical method: z-score
-  -Machine learning method: Local Outlier Factor - LOF).
--Basic authentication to secure the API endpoints, including the anomaly detection feature. 
+- User Management:
+  - Endpoint to add a new user.
+  - Endpoint to modify details of an existing user.
+  - Endpoint to remove a user.
+  - Endpoint to return a list of all users with their details.
+- Anomaly Detection algorithms that flags unusual activities based on user behavior:
+  - Statistical method: z-score
+  - Machine learning method: Local Outlier Factor - LOF).
+- Basic authentication to secure the API endpoints, including the anomaly detection feature. 
 
 
 Setup
